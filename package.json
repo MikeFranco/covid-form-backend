@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "Mike Franco",
   "license": "MIT",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
