@@ -6,6 +6,8 @@ const bodyParser = require('body-parser');
 const cors = require('cors')
 const postsRoute = require('./routes/posts');
 
+const port = process.env.PORT || 5001;
+
 //Middlewares
 app.use(cors());
 app.use(bodyParser.json());
@@ -27,4 +29,6 @@ mongoose.connect(
   () => console.log('Connected to the DB!')
 );
 
-app.listen(5001);
+app.listen(port, () => console.log(`Corriendo en el puerto: ${port}`));
+
+module.exports = { app };
