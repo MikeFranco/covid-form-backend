@@ -16,7 +16,6 @@ app.use(function(req, res, next) {
 });
 
 //Middlewares
-app.use(restify.cors());
 app.use(cors());
 app.use(bodyParser.json());
 
